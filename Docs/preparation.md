@@ -99,7 +99,7 @@ Les wireframes suivants montrent une première ébauche des interfaces du site :
 3. **Page des joueurs** : Un affichage en grille pour mettre en avant les portraits des joueurs (https://www.theblackjacks.ca/2024-roster).  
 4. **Page des sponsors** : Un affichage en grille sponsors avec classification  des logos et descriptions des sponsors (https://www.theblackjacks.ca/fr-ca/become-a-blackjacks-partner).
 
-
+          Fin
 
 ---
 
