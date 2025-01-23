@@ -40,7 +40,7 @@
   max-height: 400px;
   margin: 100px auto;
   overflow: hidden;
-  border: 1px solid #f1f1f1;
+  border: 1px solid var(--primary-color);
   border-radius: 20px;
 }
 
@@ -119,10 +119,6 @@ text-align: center;
 .teamranking tbody tr:nth-child(odd) {
   background-color: var(--second-primary-color);
   color: var(--secondary-color);
-}
-
-.teamranking tbody tr:hover {
-  transform: scale(1.2);
 }
 
 .teamranking th {
