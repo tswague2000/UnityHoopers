@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IN:wght@100..400&family=Playwrite+PE&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #FFFFEF;
+    font-family: "Inter", serif;
+    --primary-color: #FFFFEF;
+    --second-primary-color: #4C317F;
+    --secondary-color: #F1E471;
+    --font-color: #fff;
+    --secondary-font-color: #151F2C;
+}
+
+.main {
+    flex: 1;
+}

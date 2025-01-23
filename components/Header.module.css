@@ -1,0 +1,99 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    gap: 400px;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+    box-sizing: border-box;
+}
+
+.toggleConatiner .logo .navigationBar {
+    width: 100%;
+}
+
+
+
+.toggleConatiner {
+    display: none;
+}
+
+.logo {
+    padding: 4px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img {
+    width: 100px;
+    height: auto;
+
+}
+
+.navigationBar {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--secondary-font-color);
+    display: flex;
+}
+
+.ul {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    list-style: none;
+    gap: 10px;
+
+}
+
+.ul li {
+    text-transform: uppercase;
+    transition: color 0.3s;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.ul li:hover {
+    color: var(--secondary-color) ;
+    background-color:var(--second-primary-color) ;
+}
+
+
+
+.sousmenu {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .toggleConatiner{
+        display: block;
+    }
+
+    .toggleConatiner button {
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: var(--primary-color);
+        border: none;
+        margin-left: 20px;
+    }
+    .hamburgerImg {
+        width: 40px;
+        height: auto;
+    }
+    .navigationBar{
+        position: absolute;
+        width: 240px;
+        background-color: #fff;
+        height: calc(100vh - 100% -1px);
+        left: 0;
+        top: calc(100% +1px);
+    }
+}
