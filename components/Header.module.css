@@ -68,32 +68,3 @@
 .sousmenu {
     display: none;
 }
-
-@media (max-width: 960px) {
-    .toggleConatiner{
-        display: block;
-    }
-
-    .toggleConatiner button {
-        padding: 4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        background-color: var(--primary-color);
-        border: none;
-        margin-left: 20px;
-    }
-    .hamburgerImg {
-        width: 40px;
-        height: auto;
-    }
-    .navigationBar{
-        position: absolute;
-        width: 240px;
-        background-color: #fff;
-        height: calc(100vh - 100% -1px);
-        left: 0;
-        top: calc(100% +1px);
-    }
-}
