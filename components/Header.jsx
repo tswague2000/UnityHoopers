@@ -23,7 +23,7 @@ export default function Header() {
         <nav className={styles.navigationBar}>
           <ul className={`${styles.ul}`}>
             <li ><Link className={styles.link} href='/'>accueil</Link></li>
-            <li ><Link className={styles.link} href='calendrier'>évenements</Link></li>
+            <li ><Link className={styles.link} href='evenement'>évenements</Link></li>
             <li ><Link className={styles.link} href='equipe'>équipe</Link></li>
             <li ><Link className={styles.link} href='partenaires'>partenaires</Link></li>
           </ul>
