@@ -1,0 +1,52 @@
+.firstcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 2px solid #000;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.dateHeure {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.dateHeure span {
+    font-family: var(--font-Poppins);
+    font-weight: 700;
+}
+
+.lieu {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1 {
+    margin: 20px;
+    display: flex;
+}
+
+.card1 span,
+.card2 span {}

@@ -11,7 +11,7 @@ export default function Footer() {
       <Image className={styles.childIcon} src={tiktok} alt="icon-tiktok" />
       <Image className={styles.childIcon} src={instagram} alt="icon-instagram" />
       </div>
-      <span className={styles.copy}> &copy; tswague &amp; samNendji</span>
+      <span className={styles.copy}> &copy; UnityHoopers. Tous droits réservés.</span>
     </footer>
   );
 }

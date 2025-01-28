@@ -34,7 +34,6 @@ export default function Home() {
               <Image className={styles.image} src={teampicture1} alt="ima"/>
               <Image className={styles.image} src={gamepicture} alt="ima"/>
               <Image className={styles.image} src={ball} alt="ima"/>
-              
             </div>
           </div>
         </section>
@@ -76,9 +75,7 @@ export default function Home() {
         </tr>
       </tbody>
     </table>
-
 </section>
-
       </div>
     </>
   );
