@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0 10px 0 ;
 }
 
 .container {
@@ -11,11 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px 0 10px 0 ;
     background-color: transparent;
     border: 2px solid rgba(34, 34, 34, 0.2);
     border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .subcontainer {
@@ -32,7 +31,7 @@
 
 .dateHeure span {
     font-family: var(--font-Poppins);
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .lieu {
@@ -44,6 +43,7 @@
     margin: 20px;
     display: flex;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .card1,
@@ -64,9 +64,8 @@
     margin-top: 20px;
     font-weight: 700;
 }
-.container:hover{
-    transform: scale(1.2);   
+
+.card:hover{
+    transform: scale(1.2); 
 }
 
-.card1 span,
-.card2 span {}

@@ -4,7 +4,8 @@ import Link from 'next/link';
 
 import unityHoopers from '@/public/logoequipe/unityHoopers.png';
 import dreamTeam from '@/public/logoequipe/dreamTeam.png';
-
+import calendar from '@/public/calendar.png';
+import joueur from '@/public/joueur.jpg';
 
 export default function Evenenment() {
     return <>
@@ -12,29 +13,35 @@ export default function Evenenment() {
             <section className={styles.subContainer}>
                 <div className={styles.leftContainer}>
                     <h1>prochain événement</h1>
-                    <span>20 : 00 </span>
+                    <span>20 : 00  <small>Unity Hoopers Arena</small></span>
                 </div>
                 <div className={styles.rigthContainer}>
-                    <div className={styles.teamAway}>
-                        <Image src={dreamTeam} alt='team-away' />
+                    <div className={styles.team}>
+                        <Image className={styles.img} src={dreamTeam} alt='team-away' />
+                        <span>Dream Team</span>
                     </div>
-                    <div className={styles.teamHome}>
-                        <Image src={unityHoopers} alt='team-home' />
+                    <span>VS</span>
+                    <div className={styles.team}>
+                        <Image className={styles.img} src={unityHoopers} alt='team-home' />
+                        <span>Unity Hoopers</span>
                     </div>
                 </div>
             </section>
-            <Link href='../calendrier'>Calendrier des matchs</Link>
+            <Link className={styles.calendarLink} href='../calendrier'>Calendrier des matchs<Image className={styles.iconCalendar} src={calendar} alt='icon-calendar' /></Link>
             <section className={styles.subContainerPOW}>
-                    <div className={styles.back}>
-                        <span>athlète de la semaine</span>
-                       <div>
-                       <span>33 Pts </span>
-                       <span>8 Reb </span>
-                       <span>11 ast </span>
-                       </div>
+                <div className={styles.imageWrapper}>
+                    <Image className={styles.imgpow} src={joueur} alt='player-of-the-week' />
+                    <div className={styles.overlay}>
+                        <span className={styles.title}>Athlète de la semaine</span>
+                        <span>Samuel Ponganendji #4</span>
+                        <div className={styles.stats}>
+                            <span>33 Pts</span>
+                            <span>8 Reb</span>
+                            <span>11 Ast</span>
+                        </div>
                     </div>
+                </div>
             </section>
-
         </div>
     </>
 }

@@ -16,7 +16,7 @@ export default function Evenenment() {
        <div className={styles.container}>
             <div className={styles.subcontainer}>
                 <div className={styles.dateHeure}>
-                    <span>Dimanche 2</span>
+                    <span>Févr. 2</span>
                     <span>18 : 00</span>
                 </div>
                 <span className={styles.lieu}>Unity Hoopers Arena</span>
@@ -40,7 +40,7 @@ export default function Evenenment() {
        <div className={styles.container}>
             <div className={styles.subcontainer}>
                 <div className={styles.dateHeure}>
-                    <span>Dimanche 12</span>
+                    <span>Févr. 9</span>
                     <span>20 : 00</span>
                 </div>
                 <span className={styles.lieu}>gymnase Agents</span>
@@ -64,7 +64,7 @@ export default function Evenenment() {
        <div className={styles.container}>
             <div className={styles.subcontainer}>
                 <div className={styles.dateHeure}>
-                    <span>vDimanche 12</span>
+                    <span>Févr. 16 </span>
                     <span>19 : 00</span>
                 </div>
                 <span className={styles.lieu}></span>
@@ -88,7 +88,7 @@ export default function Evenenment() {
        <div className={styles.container}>
             <div className={styles.subcontainer}>
                 <div className={styles.dateHeure}>
-                    <span>vendredi 12</span>
+                    <span>Févr. 23</span>
                     <span>18 : 00</span>
                 </div>
                 <span className={styles.lieu}> unity hoopers Arena</span>
@@ -112,7 +112,7 @@ export default function Evenenment() {
        <div className={styles.container}>
             <div className={styles.subcontainer}>
                 <div className={styles.dateHeure}>
-                    <span>vendredi 12</span>
+                    <span>Mars 2 </span>
                     <span>18 : 00</span>
                 </div>
                 <span className={styles.lieu}>uottawa</span>
