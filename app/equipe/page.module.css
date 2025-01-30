@@ -1,11 +1,15 @@
-.container{
-    max-width: 200px;
+.container {
     display: grid;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste selon la taille souhaitée */
+    gap: 16px; /* Espacement entre les cartes */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
+
 .img{
     width: 100px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 100%;
     border: none;
 }

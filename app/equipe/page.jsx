@@ -10,6 +10,24 @@ export default function equipe() {
            <Joueur nom = 'wague' prenom='thierno souleymane' taille='6.4' poste='forward' villeOrigine='Guinea' >
                 <Image className={styles.img} src={joueur} alt="image-du joueur"/>
            </Joueur>
+           <Joueur nom = 'wague' prenom='thierno souleymane' taille='6.4' poste='forward' villeOrigine='Guinea' >
+                <Image className={styles.img} src={joueur} alt="image-du joueur"/>
+           </Joueur>
+           <Joueur nom = 'wague' prenom='thierno souleymane' taille='6.4' poste='forward' villeOrigine='Guinea' >
+                <Image className={styles.img} src={joueur} alt="image-du joueur"/>
+           </Joueur>
+           <Joueur nom = 'wague' prenom='thierno souleymane' taille='6.4' poste='forward' villeOrigine='Guinea' >
+                <Image className={styles.img} src={joueur} alt="image-du joueur"/>
+           </Joueur>
+           <Joueur nom = 'wague' prenom='thierno souleymane' taille='6.4' poste='forward' villeOrigine='Guinea' >
+                <Image className={styles.img} src={joueur} alt="image-du joueur"/>
+           </Joueur>
+           <Joueur nom = 'wague' prenom='thierno souleymane' taille='6.4' poste='forward' villeOrigine='Guinea' >
+                <Image className={styles.img} src={joueur} alt="image-du joueur"/>
+           </Joueur>
+           <Joueur nom = 'wague' prenom='thierno souleymane' taille='6.4' poste='forward' villeOrigine='Guinea' >
+                <Image className={styles.img} src={joueur} alt="image-du joueur"/>
+           </Joueur>
         </section>
     </>
 }

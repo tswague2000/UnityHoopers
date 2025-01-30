@@ -48,8 +48,6 @@
     gap: 10px;
 }
 
-.ul li {}
-
 .link {
     text-decoration: none;
     text-transform: uppercase;
@@ -62,12 +60,13 @@
     border-radius: 20px;
 }
 
-.ul li .link:hover {
+.ul li .link:hover{
     color: var(--secondary-color);
     background-color: var(--second-primary-color);
 }
-
-
+.ul li .link:focus {
+    color: var(--secondary-color);
+}
 
 .sousmenu {
     display: none;
