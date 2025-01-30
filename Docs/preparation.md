@@ -10,8 +10,8 @@ Le site est structuré pour offrir une expérience utilisateur simple et fluide,
 ## 🌟 Fonctionnalités principales
 - **Page d'accueil** : Présente l'équipe de basketball, son histoire, et ses valeurs, avec des photos et des paragraphes de présentation.
 - **Deux pages d'événements** :
-  - *Matchs à domicile* : Détails sur les matchs joués sur le terrain de l'équipe.
-  - *Matchs à l'extérieur* : Informations sur les matchs joués à l'extérieur.
+  - *page évenement : qui affiche le prochain évenement , un lien vers tous les matchs de l'équipe, et une image du joueur de la semaine avec son nom, state et numéro de maillot
+  - *page calendrier: qui affiche les les matchs à venir
 - **Page des joueurs** : Présentation des membres de l'équipe avec photos, noms, positions, taille et provenance.
 - **Page des sponsors** : Liste des partenaires avec noms, logos, et liens externes.
 
