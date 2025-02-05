@@ -1,15 +1,18 @@
+import Image from 'next/image';
+
 import styles from './Joueur.module.css';
 
-export default function Joueur({ nom, prenom, taille, poste, villeOrigine, children }){
-    return <>  
+export default function Joueur({ nom, prenom, taille, poste, villeOrigine, image, numero }) {
+  return <>
     <div className={styles.container}>
-      <div>
-        {children}
-      </div>
+      <Image className={styles.img} src={image} alt='img-joueur' />
       <div className={styles.carte}>
-        <span className={styles.nom}>{prenom} {nom}</span>
-       <span className={styles.details}>{taille} | {poste} | {villeOrigine}</span>
+        <div className={styles.NomPrenom}>
+          <span className={styles.prenom}>{prenom} </span>
+          <span className={styles.nom}>{nom}</span>
+        </div>
+        <span className={styles.details}>{taille} | {poste} | {villeOrigine} #{numero}</span>
       </div>
-    </div>        
-    </>
+    </div>
+  </>
 }

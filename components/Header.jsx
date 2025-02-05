@@ -14,11 +14,12 @@ export default function Header() {
           </button>
         </div>
         <div className={styles.logo}>
-          <Link href='/' ><Image
-            className={styles.img}
-            src={logo}
-            alt="logo-UnityHoopers"
-          /></Link>
+          <Link href='/' >
+            <Image
+              className={styles.img}
+              src={logo}
+              alt="logo-UnityHoopers" />
+          </Link>
         </div>
         <nav className={styles.navigationBar}>
           <ul className={`${styles.ul}`}>

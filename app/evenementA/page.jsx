@@ -41,6 +41,5 @@ export default function EvenementA() {
                 </Effectif>
             </div>
         </div>
-
     </>
 }
