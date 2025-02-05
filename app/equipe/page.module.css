@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste selon la taille souhaitée */
-    gap: 16px; /* Espacement entre les cartes */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px; 
     justify-content: center;
     align-items: center;
     padding: 20px;

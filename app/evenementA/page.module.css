@@ -1,0 +1,103 @@
+.container {
+
+    background-image: url('../../public/TerrainBGunityHoopers.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.information {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.subContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerOpposition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 15rem;
+    height: 40vh;
+    background-color: #05050599;
+    border-radius: .5rem;
+    box-shadow: 3px 3px 3px var(--primary-color);
+}
+
+.containerOpposition>span{
+    color: #fff;
+    font-size: 5rem;
+}
+
+.containerEquipe{
+    width: 100%;
+    height: 40rem;
+}
+
+.containerEquipe h2{
+    height: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+.containerJoueur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .subContainer {
+        flex-direction: column;
+    }
+    
+    .containerOpposition {
+        width: 10rem;
+        height: 10rem;
+        margin: 0.5rem;
+    }
+    
+    .containerOpposition > span {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: auto;
+        padding: 0.5rem;
+    }
+    
+    .subContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .containerOpposition {
+        width: 8rem;
+        height: 8rem;
+        margin: 0.5rem;
+    }
+    
+    .containerOpposition > span {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,20 @@
+.container{
+    border: 1px solid #05050599;
+    border-radius: 10px;
+    background-color: #fff;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.containerNom{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.containerNom>span{
+font-size: 1.2rem;
+font-weight: bold;
+}

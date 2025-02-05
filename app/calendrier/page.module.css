@@ -5,7 +5,10 @@
     align-items: center;
     margin: 10px 0 10px 0 ;
 }
-
+.a{
+    text-decoration: none;
+    color: var(--secondary-font-color);
+}
 .container {
     width: 1000px;
     display: flex;

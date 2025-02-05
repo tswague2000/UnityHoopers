@@ -1,6 +1,8 @@
+import Link from 'next/link';
+import Image from "next/image";
+
 import styles from './page.module.css'
 
-import Image from "next/image";
 import agents from '@/public/logoequipe/Agents.png';
 import believe from '@/public/logoequipe/believeThat.png';
 import dream from '@/public/logoequipe/dreamTeam.png';
@@ -12,6 +14,7 @@ import weShoot3s from '@/public/logoequipe/weShoot3s.png';
 
 export default function Evenenment() {
     return <>
+       <Link href="evenementA" className={styles.a}>
        <div className={styles.firstcontainer}>
        <div className={styles.container}>
             <div className={styles.subcontainer}>
@@ -36,6 +39,8 @@ export default function Evenenment() {
             </div>
         </div>
        </div>
+       </Link>
+       <Link href="evenementB" className={styles.a}>
        <div className={styles.firstcontainer}>
        <div className={styles.container}>
             <div className={styles.subcontainer}>
@@ -60,6 +65,7 @@ export default function Evenenment() {
             </div>
         </div>
        </div>
+       </Link>
        <div className={styles.firstcontainer}>
        <div className={styles.container}>
             <div className={styles.subcontainer}>

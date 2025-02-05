@@ -95,7 +95,7 @@ Description : Un blanc pur légèrement adouci.
 ## 📋 Wireframes
 Les wireframes suivants montrent une première ébauche des interfaces du site :
 1. **Page d'accueil** : Une présentation simple avec un titre, une photo de l'équipe, et une section de texte,  son classement dans la ligue, (une ligne pour decrire les dernières infos du club).  
-2. **Page des événements** : Une mise en page claire avec les détails des matchs (nom, logo, date, heure, lieu, bilan de la saison des deux équipes) comme ce site (https://www.theblackjacks.ca/schedule).  
+2. **Page des événements** : Une mise en page claire avec les détails des matchs (nom, logo, date, heure, lieu, bilan de la saison des deux équipes) comme ce site (https://www.euroleaguebasketball.net/fr/euroleague/game-center/2024-25/anadolu-efes-istanbul-real-madrid/E2024/217/#effectif).  
 3. **Page des joueurs** : Un affichage en grille pour mettre en avant les portraits des joueurs (https://www.theblackjacks.ca/2024-roster).  
 4. **Page des sponsors** : Un affichage en grille sponsors avec classification  des logos et descriptions des sponsors (https://www.theblackjacks.ca/fr-ca/become-a-blackjacks-partner).
 
