@@ -2,14 +2,16 @@
     width: 100%;
     display: flex;
     height: 15vh;
-    gap: 400px;
+    gap: 25rem;
     align-items: center;
     padding: 10px 15px;
     border-bottom: 1px solid rgba(34, 34, 34, 0.2);
     box-sizing: border-box;
 }
 
-.toggleConatiner .logo .navigationBar {
+.toggleConatiner,
+.logo,
+.navigationBar {
     width: 100%;
 }
 
@@ -19,21 +21,26 @@
 
 .logo {
     padding: 4px;
-    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
+.toggleConatiner button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .img {
     width: 100px;
     height: auto;
-
+    display: inline-block;
 }
 
 .navigationBar {
-    margin: 0 10px;
     font-size: 16px;
     font-weight: 500;
     color: var(--secondary-font-color);
@@ -48,8 +55,6 @@
     gap: 10px;
 }
 
-.ul li {}
-
 .link {
     text-decoration: none;
     text-transform: uppercase;
@@ -57,8 +62,8 @@
     color: var(--secondary-font-color);
     font-weight: 700;
     display: block;
-    padding: 10px;
     font-size: 1.1rem;
+    padding: .5rem;
     border-radius: 20px;
 }
 
@@ -67,8 +72,50 @@
     background-color: var(--second-primary-color);
 }
 
-
+.ul li .link:focus {
+    color: var(--secondary-color);
+}
 
 .sousmenu {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        gap: 10rem;
+    }
+
+    .toggleConatiner {
+        display: block;
+    }
+
+    .navigationBar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+        z-index: 2;
+    }
+
+    .navigationBar.open {
+        display: flex;
+    }
+
+    .ul {
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+        gap: 2rem;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .navigation {
+        gap: 5rem;
+    }
 }

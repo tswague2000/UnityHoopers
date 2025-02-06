@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    height: 25rem;
+    margin: 0.5rem;
+    font-family: var(--font-poppins);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.img {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.NomPrenom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nom {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.img:hover {
+    transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 12rem;
+        height: 22rem;
+    }
+
+    .img {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .nom {
+        font-size: 1rem;
+    }
+
+    .details {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 10rem;
+        height: 18rem;
+    }
+
+    .img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .nom {
+        font-size: 0.9rem;
+    }
+
+    .details {
+        font-size: 0.8rem;
+    }
+}

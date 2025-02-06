@@ -1,0 +1,68 @@
+.container {
+    width: 40%;
+    padding: 1rem;
+}
+
+.containerNomEquipe {
+    width: 12rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.containerNomEquipe>div {
+    font-size: 1.2rem;
+    font-family: var(--font-poppins);
+    font-weight: 700;
+}
+
+.containerJoueur{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1rem; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 0.5rem;
+    }
+    
+    .containerNomEquipe {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 7.5rem;
+    }
+    
+    .containerJoueur {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 80%;
+        padding: 0.5rem;
+    }
+    
+    .containerNomEquipe {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 7.5rem;
+    }
+    
+    .containerJoueur {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.2rem;
+        padding: 3px;
+    }
+}

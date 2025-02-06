@@ -29,53 +29,53 @@ export default function Home() {
         <section className={styles.images}>
           <div className={`${styles.slidercontainer, styles.slider1}`}>
             <div className={styles.slider}>
-              <Image className={styles.image} src={ball} alt="ima"/>
-              <Image className={styles.image} src={team} alt="ima"/>
-              <Image className={styles.image} src={teampicture1} alt="ima"/>
-              <Image className={styles.image} src={gamepicture} alt="ima"/>
-              <Image className={styles.image} src={ball} alt="ima"/>
+              <Image className={styles.image} src={ball} alt="ima" />
+              <Image className={styles.image} src={team} alt="ima" />
+              <Image className={styles.image} src={teampicture1} alt="ima" />
+              <Image className={styles.image} src={gamepicture} alt="ima" />
+              <Image className={styles.image} src={ball} alt="ima" />
             </div>
           </div>
         </section>
-<section className= {styles.classement}>
-    <h2 className= {styles.titre}>classement</h2>
-<table className={styles.teamranking} border={1}>
-      <thead>
-        <tr>
-          <th>Pos</th>
-          <th>Nom</th>
-          <th>Bilan</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>UnityHoopers</td>
-          <td>10-2</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Basket Stars</td>
-          <td>9-3</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Hoop Legends</td>
-          <td>9-3</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>we shoots 3s</td>
-          <td>8-4</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>mamba</td>
-          <td>7-5</td>
-        </tr>
-      </tbody>
-    </table>
-</section>
+        <section className={styles.classement}>
+          <h2 className={styles.titre}>classement</h2>
+          <table className={styles.teamranking} border={1}>
+            <thead>
+              <tr>
+                <th>Pos</th>
+                <th>Nom</th>
+                <th>Bilan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>UnityHoopers</td>
+                <td>10-2</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Basket Stars</td>
+                <td>9-3</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Hoop Legends</td>
+                <td>9-3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>we shoots 3s</td>
+                <td>8-4</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>mamba</td>
+                <td>7-5</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
       </div>
     </>
   );

@@ -1,0 +1,44 @@
+.container {
+    background-color: #05050599; 
+    padding: 15px;
+    border-radius: 8px; 
+    width: 25rem;
+    color: var(--font-color); 
+    font-family: var(--font-poppins);
+}
+
+.container ul {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none; 
+}
+
+.container li {
+    font-size: 1.5 rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .container ul {
+        flex-direction: column; 
+        gap: 0.5rem; 
+    }
+
+    .container li {
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 8px; 
+    }
+
+    .container li {
+        font-size: 1rem; 
+    }
+}

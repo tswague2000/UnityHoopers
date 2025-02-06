@@ -12,9 +12,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
 } 
+
 .copy{
     margin: 10px;
 }
+
 .childIcon:hover{
     transform: scale(1.2);   
 }
