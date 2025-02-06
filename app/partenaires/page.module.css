@@ -1,0 +1,70 @@
+.firstcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.container {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(34, 34, 34, 0.2);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.subcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.dateHeure {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.dateHeure span {
+    font-family: var(--font-Poppins);
+    font-weight: 700;
+}
+
+.lieu {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1,
+.card2 {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.card>span {
+    margin-top: 20px;
+    font-weight: 700;
+}
+.container:hover{
+    transform: scale(1.2);   
+}
+

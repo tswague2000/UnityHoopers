@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.sponsorsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.sponsorImage {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.sponsorImage:hover {
+  overflow: visible;
+  transform: scale(1.1);
+}
+
+.nbaImage {
+  width: 100px; 
+  height: 100px;
+}
+
+.beckerImage {
+  width: 150px;
+  height: 150px;
+}
+
+.burgerKingImage {
+  width: 150px;
+  height: 150px;
+}
+
+
