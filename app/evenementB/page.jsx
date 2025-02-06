@@ -1,12 +1,17 @@
+// Importation des composants nécessaires pour l'affichage des informations de l'événement et des équipes
 import Information from "@/components/composantEvenements/Information";
 import Equipe from '../../components/composantEvenements/Equipe';
 import Effectif from '@/components/composantEffectif/Effectif';
 import Joueur from "@/components/composantEffectif/Joueur";
 
+// Importation du fichier CSS pour le style
 import styles from './page.module.css';
 
+// Importation des logos des équipes
 import unityHoopers from '@/public/logoequipe/UnityHoopers.png';
 import agents from '@/public/logoequipe/Agents.png';
+
+// Fonction principale du composant EvenementB
 export default function EvenementB(){
     return <>
     <div className={styles.container}>

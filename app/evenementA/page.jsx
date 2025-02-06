@@ -1,13 +1,17 @@
-import Information from "@/components/composantEvenements/Information";
-import Equipe from '../../components/composantEvenements/Equipe';
-import Effectif from '@/components/composantEffectif/Effectif';
-import Joueur from "@/components/composantEffectif/Joueur";
+// Importation des composants nécessaires pour la page des événements
+import Information from "@/components/composantEvenements/Information"; // Composant affichant les détails de l'événement
+import Equipe from "../../components/composantEvenements/Equipe"; // Composant représentant une équipe
+import Effectif from "@/components/composantEffectif/Effectif"; // Composant affichant la liste des joueurs d'une équipe
+import Joueur from "@/components/composantEffectif/Joueur"; // Composant représentant un joueur individuel
 
+// Importation des styles spécifiques à la page
 import styles from './page.module.css';
 
+// Importation des logos des équipes
 import unityHoopers from '@/public/logoequipe/UnityHoopers.png';
 import DreamTeam from '@/public/logoequipe/dreamTeam.png';
 
+// Définition du composant principal de la page EvenementA
 export default function EvenementA() {
     return <>
         <div className={styles.container}>

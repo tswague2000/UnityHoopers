@@ -1,13 +1,17 @@
+// Importation du composant Joueur pour l'affichage des joueurs
 import Joueur from "@/components/Joueur";
 
+// Importation des styles CSS pour la page
 import styles from './page.module.css';
 
+// Importation des images des joueurs
 import wague from '@/public/joueurs/wague.jpg';
 import balde from '@/public/joueurs/balde.png';
 import naite from '@/public/joueurs/naite.png';
 import moussa from '@/public/joueurs/moussa.png';
 import sam from '@/public/joueurs/sam.png';
 
+// Définition du composant principal de la page "équipe"
 export default function equipe() {
      return <>
           <section className={styles.container}>

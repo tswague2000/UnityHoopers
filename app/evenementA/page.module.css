@@ -1,103 +1,107 @@
+/* Conteneur principal avec fond d'écran */
 .container {
-
-    background-image: url('../../public/TerrainBGunityHoopers.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    background-image: url('../../public/TerrainBGunityHoopers.jpg'); /* Image de fond */
+    background-size: cover; /* Couvre toute la surface du conteneur */
+    background-position: center; /* Centre l'image de fond */
+    height: 100vh; /* Hauteur de la fenêtre du navigateur */
 }
 
+/* Section d'information avec centrer du contenu */
 .information {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    width: 100%; /* Largeur complète */
+    display: flex; /* Utilisation du modèle flexbox */
+    justify-content: center; /* Centrage horizontal */
 }
 
+/* Sous-conteneur pour aligner son contenu au centre */
 .subContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
 }
 
+/* Conteneur pour l'opposition (par exemple, équipe adverse) */
 .containerOpposition {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    width: 15rem;
-    height: 40vh;
-    background-color: #05050599;
-    border-radius: .5rem;
-    box-shadow: 3px 3px 3px var(--primary-color);
+    display: flex; /* Flexbox pour l'alignement */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    margin: 1rem; /* Marge autour du conteneur */
+    width: 15rem; /* Largeur du conteneur */
+    height: 40vh; /* Hauteur relative à la hauteur de la fenêtre */
+    background-color: #05050599; /* Couleur de fond avec transparence */
+    border-radius: .5rem; /* Coins arrondis */
+    box-shadow: 3px 3px 3px var(--primary-color); /* Ombre autour du conteneur */
 }
 
-.containerOpposition>span{
-    color: #fff;
-    font-size: 5rem;
+/* Style des éléments span dans le conteneur opposition (probablement le nom de l'équipe) */
+.containerOpposition > span {
+    color: #fff; /* Couleur du texte en blanc */
+    font-size: 5rem; /* Taille de la police */
 }
 
-.containerEquipe{
-    width: 100%;
-    height: 40rem;
+/* Conteneur pour l'équipe avec une hauteur fixe */
+.containerEquipe {
+    width: 100%; /* Largeur complète */
+    height: 40rem; /* Hauteur fixe */
 }
 
-.containerEquipe h2{
-    height: 2rem;
-    padding: 1rem;
-    text-align: center;
-    background-color: #fff;
-    text-transform: capitalize;
-    margin-top: 0;
+/* Style pour les titres dans le conteneur équipe */
+.containerEquipe h2 {
+    padding: 1rem; /* Padding autour du titre */
+    text-align: center; /* Centrage du texte */
+    background-color: #fff; /* Fond blanc */
+    text-transform: capitalize; /* Mettre la première lettre en majuscule */
+    margin-top: 0; /* Retirer la marge en haut */
 }
 
-.containerJoueur{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
+/* Conteneur pour les joueurs avec un espacement entre les éléments */
+.containerJoueur {
+    display: flex; /* Utilisation du modèle flexbox */
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    gap: 0.2rem; /* Espacement entre les éléments */
 }
 
-
-
+/* Media query pour les écrans de taille moyenne (max-width: 768px) */
 @media (max-width: 768px) {
     .container {
-        height: auto;
-        padding: 1rem;
+        height: auto; /* Hauteur automatique */
+        padding: 1rem; /* Padding réduit */
     }
     
     .subContainer {
-        flex-direction: column;
+        flex-direction: column; /* Disposition en colonne */
     }
     
     .containerOpposition {
-        width: 10rem;
-        height: 10rem;
-        margin: 0.5rem;
+        width: 10rem; /* Réduction de la largeur */
+        height: 10rem; /* Réduction de la hauteur */
+        margin: 0.5rem; /* Réduction de la marge */
     }
     
     .containerOpposition > span {
-        font-size: 3rem;
+        font-size: 3rem; /* Réduction de la taille de la police */
     }
 }
 
+/* Media query pour les écrans de petite taille (max-width: 480px) */
 @media (max-width: 480px) {
     .container {
-        height: auto;
-        padding: 0.5rem;
+        padding: 0.5rem; /* Padding encore plus réduit */
     }
     
     .subContainer {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Disposition en colonne */
+        align-items: center; /* Centrage des éléments */
     }
     
     .containerOpposition {
-        width: 8rem;
-        height: 8rem;
-        margin: 0.5rem;
+        width: 8rem; /* Réduction de la largeur */
+        height: 8rem; /* Réduction de la hauteur */
+        margin: 0.5rem; /* Réduction de la marge */
     }
     
     .containerOpposition > span {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Réduction de la taille de la police */
     }
 }

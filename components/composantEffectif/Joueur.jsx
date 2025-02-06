@@ -1,5 +1,6 @@
 import styles from "./joueur.module.css";
 
+// creation du composant Joueur prennant les attributs svts prenom, nom, numero
 export default function Joueur({ prenom, nom, numero }) {
     return <>
         <div className={styles.container}>

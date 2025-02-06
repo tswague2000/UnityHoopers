@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import styles from './Joueur.module.css';
 
+// creation du composant Joueur prenant les attributs svts nom, prenom, taille, poste, villeOrigine, image, numero
 export default function Joueur({ nom, prenom, taille, poste, villeOrigine, image, numero }) {
   return <>
     <div className={styles.container}>

@@ -1,5 +1,9 @@
-import styles from "./Footer.module.css";
 import Image from "next/image";
+
+// importation du style
+import styles from "./Footer.module.css";
+
+// importation des images
 import facebook from "@/public/facebook.svg";
 import instagram from "@/public/instagram.svg";
 import tiktok from "@/public/tiktok.svg";

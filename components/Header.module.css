@@ -9,7 +9,9 @@
     box-sizing: border-box;
 }
 
-.toggleConatiner, .logo, .navigationBar {
+.toggleConatiner,
+.logo,
+.navigationBar {
     width: 100%;
 }
 
@@ -25,13 +27,20 @@
     cursor: pointer;
 }
 
+.toggleConatiner button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .img {
     width: 100px;
     height: auto;
+    display: inline-block;
 }
 
 .navigationBar {
-    /* margin: 0 10px; */
     font-size: 16px;
     font-weight: 500;
     color: var(--secondary-font-color);
@@ -54,6 +63,7 @@
     font-weight: 700;
     display: block;
     font-size: 1.1rem;
+    padding: .5rem;
     border-radius: 20px;
 }
 
@@ -88,6 +98,7 @@
         width: 100%;
         background-color: var(--primary-color);
         border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+        z-index: 2;
     }
 
     .navigationBar.open {
@@ -97,9 +108,9 @@
     .ul {
         flex-direction: column;
         align-items: center;
-        height: 30vh;
+        height: 40vh;
         gap: 2rem;
-      
+
     }
 }
 

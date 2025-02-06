@@ -2,7 +2,8 @@ import Image from "next/image";
 
 import styles from './Equipe.module.css';
 
-export default function NomLogo({ nom, logo, position, victoires, defaites, matchUn, matchDeux, matchTrois, matchQuatre, matchCinq }) {
+// creation du composant Equipe qui prends les attribut svts nom, logo, position, victoires, defaites, matchUn, matchDeux, matchTrois, matchQuatre, matchCinq
+export default function Equipe({ nom, logo, position, victoires, defaites, matchUn, matchDeux, matchTrois, matchQuatre, matchCinq }) {
   return <>
     <div className={styles.container}>
       <div className={styles.containerLogo}>
