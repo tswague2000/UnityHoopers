@@ -1,0 +1,65 @@
+.container {
+    margin: 1.2em;
+    border: 1px solid var(--secondary-font-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 1rem;
+    border-bottom: .2px solid var(--secondary-font-color);
+}
+
+.titre {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.champ{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.champ input{
+    padding: .8rem;
+    border-radius: 5px;
+}
+
+.champ textarea{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.erreur{
+    color: red;
+}
+
+.bouton {
+    text-transform: capitalize;
+    background-color: var(--second-primary-color); 
+    color: var(--font-color); 
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    max-width: 8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bouton:hover {
+    color: var(--secondary-color); /* Couleur au survol */
+    filter: brightness(85%);
+}
