@@ -1,7 +1,9 @@
+import ContactForm from '@/components/componentsForm/ContactForm';
+
 import styles from './page.module.css';
 
 export default function Contact(){
     return <>
-    <h1>contact</h1>
+    <ContactForm/>
     </>
 }
