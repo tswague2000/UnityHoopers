@@ -4,6 +4,7 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    padding: 0;
     background-color: #FFFFEF;
     --primary-color: #FFFFEF;
     --second-primary-color: #4C317F;

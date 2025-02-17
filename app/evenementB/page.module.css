@@ -87,7 +87,7 @@
 }
 
 /* Media query pour les petits écrans (max 480px) */
-@media (max-width: 480px) {
+@media (max-width: 415px) {
     .container {
         height: auto; /* Ajuster la hauteur */
         padding: 0.5rem; /* Réduire le padding */

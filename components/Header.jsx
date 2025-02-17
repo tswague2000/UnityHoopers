@@ -37,6 +37,7 @@ export default function Header() {
             <li><Link className={styles.link} href='calendrier'>évenements</Link></li>
             <li><Link className={styles.link} href='equipe'>équipe</Link></li>
             <li><Link className={styles.link} href='partenaires'>partenaires</Link></li>
+            <li><Link className={styles.link} href='contact'>contact</Link></li>
           </ul>
         </nav>
       </div>
