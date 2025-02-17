@@ -23,31 +23,31 @@ const formContact = (previousFormState, formData) => {
     // Validation pour le nom
     if (!nom) {
         erreur = true;
-        newFormState.nom.erreur = 'Veuillez entrer votre nom.';
+        newFormState.nom.erreur = 'Veuillez entrer votre nom';
     } else if (nom.length < 2) {
         erreur = true;
-        newFormState.nom.erreur = 'Le nom doit comporter au moins 2 caractères.';
+        newFormState.nom.erreur = 'Le nom doit comporter au moins 2 caractères';
     } else if (!nom.match(/^[A-Za-zÀ-ÖØ-öø-ÿ\s-]+$/)) {
         erreur = true;
-        newFormState.nom.erreur = 'Le nom ne peut contenir que des lettres, espaces ou tirets.';
+        newFormState.nom.erreur = 'Le nom ne peut contenir que des lettres, espaces ou tirets';
     }
 
     // Validation pour le courriel
     if (!courriel) {
         erreur = true;
-        newFormState.courriel.erreur = 'Veuillez entrer une adresse courriel.';
+        newFormState.courriel.erreur = 'Veuillez entrer une adresse courriel';
     } else if (!courriel.match(/(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/)) {
         erreur = true;
-        newFormState.courriel.erreur = 'Veuillez entrer une adresse courriel valide.';
+        newFormState.courriel.erreur = 'Veuillez entrer une adresse courriel valide';
     }
 
     // Validation pour le message
     if (!message) {
         erreur = true;
-        newFormState.message.erreur = 'Veuillez entrer un message.';
+        newFormState.message.erreur = 'Veuillez entrer un message';
     } else if (message.length > 500) {
         erreur = true;
-        newFormState.message.erreur = 'Le message ne doit pas dépasser 500 caractères.';
+        newFormState.message.erreur = 'Le message ne doit pas dépasser 500 caractères';
     }
 
     // Affichage dans la console si aucune erreur
@@ -87,6 +87,7 @@ export default function Contact() {
                         type="text" 
                         name="nom" 
                         defaultValue={formState.nom.valeur} 
+                        className={formState.nom.erreur ? styles.erreur : ''}
                     />
                     <div className={styles.erreur}>
                         {formState.nom.erreur}
@@ -98,6 +99,7 @@ export default function Contact() {
                         type="email" 
                         name="courriel" 
                         defaultValue={formState.courriel.valeur} 
+                        className={formState.courriel.erreur ? styles.erreur : ''}
                     />
                     <div className={styles.erreur}>
                         {formState.courriel.erreur}
@@ -110,6 +112,7 @@ export default function Contact() {
                         rows="5" 
                         maxLength="500" 
                         defaultValue={formState.message.valeur} 
+                        className={formState.message.erreur ? styles.erreur : ''}
                     ></textarea>
                     <div className={styles.erreur}>
                         {formState.message.erreur}
