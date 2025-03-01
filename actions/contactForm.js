@@ -38,11 +38,13 @@ export async function contactFormServer(formData) {
     // console.log("Message reçu :", { nom: formData.get('nom'), courriel, message });
 
     // envoi des informations avec resend
-   await resend.emails.send({
-        from: 'onboarding@resend.dev',
+    await resend.emails.send({
+        from: 'onboarding@resend.dev', 
         to: 'hadjaidiatou500@gmail.com',
-        subject: message,
-        html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-      });
+        subject: "Nouveau message du formulaire de contact",
+        html:'<p> formulare de contact </p>',
+        text: message 
+    });
+    
     return [false, { success: "Votre message a été envoyé avec succès !" }];
 }
