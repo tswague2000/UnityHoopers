@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    height: auto; 
 }
 
 .form {
@@ -36,15 +37,18 @@
     padding: .8rem;
     border-radius: 5px;
     color: var(--secondary-font-color);
+    width: 100%; 
+    box-sizing: border-box;
 }
 
 .champ textarea {
     border-radius: 5px;
-    min-width: 90.45rem;
-    max-width: 90.45rem;
-    width: 100%;
+    width: 100%; 
+    min-width: 100%; 
+    max-width: 100%; 
     box-sizing: border-box;
     color: var(--secondary-font-color);
+    resize: vertical; 
 }
 
 .champ input,
@@ -52,7 +56,6 @@
     border: 1px solid #ccc;
     padding: .8rem;
     font-size: 1rem;
-
 }
 
 .champ input.erreur,
@@ -82,21 +85,4 @@
 .bouton:hover {
     color: var(--secondary-color);
     filter: brightness(85%);
-}
-
-
-@media (max-width: 768px) {
-
-    .champ textarea {
-        min-width: 25.7rem;
-        max-width: 25.7rem;
-    }
-}
-
-@media (max-width: 415px) {
-
-    .champ textarea {
-        min-width: 25.7rem;
-        max-width: 25.7rem;
-    }
 }
