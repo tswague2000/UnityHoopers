@@ -12,6 +12,14 @@ import thedirty from '@/public/logoequipe/Thedirty.png';
 import UnityHoopers from '@/public/logoequipe/UnityHoopers.png';
 import weShoot3s from '@/public/logoequipe/weShoot3s.png';
 
+/***
+ * @type {import('next').Metadata}
+ */
+export const metadata = {
+    title: "Evénements", // Titre affiché dans l'onglet du navigateur
+    description: "Consultez et gérez nos événements sur cette page calendrier." // Description spécifique à la page calendrier" 
+};
+
 export default function Evenenment() {
     return <>
        <Link href="evenementA" className={styles.a}>

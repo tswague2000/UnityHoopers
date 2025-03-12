@@ -11,6 +11,14 @@ import naite from '@/public/joueurs/naite.png';
 import moussa from '@/public/joueurs/moussa.png';
 import sam from '@/public/joueurs/sam.png';
 
+/***
+ * @type {import('next').Metadata}
+ */
+export const metadata = {
+     title: "Equipe", // Titre affiché dans l'onglet du navigateur
+     description: "Découvrez les membres de notre club de basket-ball et leur postes." // Description spécifique à la page Équipe
+};
+
 // Définition du composant principal de la page "équipe"
 export default function equipe() {
      return <>

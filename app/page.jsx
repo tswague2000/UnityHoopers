@@ -7,6 +7,14 @@ import teampicture1 from '@/public/teampicture1.jpg'
 
 import styles from "./page.module.css";
 
+/***
+ * @type {import('next').Metadata}
+ */
+export const metadata = {
+  title: "Accueil", // Titre affiché dans l'onglet du navigateur
+  description: "Création de site web vitrine d'un club de basket-ball" // Courte description du site
+};
+
 export default function Home() {
   return (
     <>

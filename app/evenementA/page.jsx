@@ -11,6 +11,14 @@ import styles from './page.module.css';
 import unityHoopers from '@/public/logoequipe/UnityHoopers.png';
 import DreamTeam from '@/public/logoequipe/dreamTeam.png';
 
+/***
+ * @type {import('next').Metadata}
+ */
+export const metadata = {
+    title: "Evénements", // Titre affiché dans l'onglet du navigateur
+    description: "Découvrez les événements à venir et les activités de notre club de basket-ball." // Description spécifique à la page Événements
+};
+
 // Définition du composant principal de la page EvenementA
 export default function EvenementA() {
     return <>
