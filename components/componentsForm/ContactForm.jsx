@@ -40,10 +40,11 @@ export default function Contact() {
             </div>
             <form action={formAction} className={styles.form} noValidate>
                 <div className={styles.champ}>
-                    <label>Nom *</label>
+                    <label for="nom">Nom *</label>
                     <input
                         type="text"
                         name="nom"
+                        id='nom'
                         defaultValue={formState.nom.valeur}
                         className={formState.nom.erreur ? styles.erreur : ''}
                     />
@@ -52,10 +53,11 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className={styles.champ}>
-                    <label>Email *</label>
+                    <label for="email" >Email *</label>
                     <input
                         type="email"
                         name="courriel"
+                        id='email'
                         defaultValue={formState.courriel.valeur}
                         className={formState.courriel.erreur ? styles.erreur : ''}
                     />
@@ -64,9 +66,10 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className={styles.champ}>
-                    <label>Rédigez votre message *</label>
+                    <label fro="message">Rédigez votre message *</label>
                     <textarea
                         name="message"
+                        id='message'
                         rows="5"
                         maxLength="500"
                         defaultValue={formState.message.valeur}
