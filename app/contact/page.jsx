@@ -1,6 +1,4 @@
 import ContactForm from '@/components/componentsForm/ContactForm';
-import styles from './page.module.css';
-
 /***
  * @type {import('next').Metadata}
  */

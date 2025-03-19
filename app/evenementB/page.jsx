@@ -16,7 +16,7 @@ import agents from '@/public/logoequipe/Agents.png';
  */
 export const metadata = {
     title: "Evénements", // Titre affiché dans l'onglet du navigateur
-    description: "Découvrez les événements à venir et les activités de notre club de basket-ball." // Description spécifique à la page Événements
+    description: "UnityHoopers se déplace pour un match crucial contre Agents ! Suivez la performance de votre équipe à l'extérieur et restez connectés pour les mises à jour en direct, les résultats et les moments forts. Allez UnityHoopers !" // Description spécifique à la page Événements
 };
 
 // Fonction principale du composant EvenementB

@@ -10,26 +10,38 @@ export default function Sitemap() {
             changeFrequency: 'monthly',
             priority: 0.8
         },
-
         {
-            url: 'http://localhost:3000/gallerie',
+            url: 'http://localhost:3000/equipe',
             lastModified: new Date(),
-            changeFrequency: 'monthly',
-            priority: 0.2
+            changeFrequency: 'yearly',
+            priority: 0.7
+        },
+        {
+            url: 'http://localhost:3000/partenaires',
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.7
         },
 
         {
-            url: 'http://localhost:3000/apropos',
+            url: 'http://localhost:3000/evenementA',
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 0.8
         },
 
         {
-            url: 'http://localhost:3000/form',
+            url: 'http://localhost:3000/evenementB',
             lastModified: new Date(),
-            changeFrequency: 'monthly',
+            changeFrequency: 'yearly',
             priority: 0.8
+        },
+
+        {
+            url: 'http://localhost:3000/contact',
+            lastModified: new Date(),
+            changeFrequency: 'yearly',
+            priority: 0.7
         }
     ]
 }

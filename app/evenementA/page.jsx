@@ -16,7 +16,7 @@ import DreamTeam from '@/public/logoequipe/dreamTeam.png';
  */
 export const metadata = {
     title: "Evénements", // Titre affiché dans l'onglet du navigateur
-    description: "Découvrez les événements à venir et les activités de notre club de basket-ball." // Description spécifique à la page Événements
+    description: "Ne manquez pas l’affrontement tant attendu entre UnityHoopers et Dream Team ! Rendez-vous à domicile pour soutenir votre équipe locale et vivre un match intense rempli d’action et de passion. Achetez vos billets et rejoignez l’ambiance électrique du basketball ! " 
 };
 
 // Définition du composant principal de la page EvenementA

@@ -66,7 +66,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className={styles.champ}>
-                    <label fro="message">Rédigez votre message *</label>
+                    <label for="message">Rédigez votre message *</label>
                     <textarea
                         name="message"
                         id='message'
