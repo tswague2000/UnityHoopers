@@ -11,8 +11,8 @@ import styles from "./page.module.css";
  * @type {import('next').Metadata}
  */
 export const metadata = {
-  title: "Accueil", // Titre affiché dans l'onglet du navigateur
-  description: "Création de site web vitrine d'un club de basket-ball" // Courte description du site
+  title: "Accueil", 
+  description: "Création de site web vitrine d'un club de basket-ball" 
 };
 
 export default function Home() {

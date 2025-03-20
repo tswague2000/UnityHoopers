@@ -7,15 +7,19 @@ import styles from './ContactForm.module.css';
 import { validateFormContact } from '@/validations/contactForm';
 import { contactFormServer } from '@/actions/contactForm';
 
+// Fonction asynchrone pour gérer l'envoi du formulaire de contact
 const formContact = async (previousFormState, formData) => {
+    // Validation des données du formulaire
     let [erreur, newFormState] = validateFormContact(formData);
 
+    // Si une erreur est détectée, on met à jour l'état du formulaire avec les valeurs saisies
     if (erreur) {
         newFormState.nom.valeur = formData.get('nom');
         newFormState.courriel.valeur = formData.get('courriel');
         newFormState.message.valeur = formData.get('message');
     }
 
+    // Si aucune erreur n'est détectée, on envoie les données au serveur
     if (!erreur) {
         let [erreur, newFormState] = await contactFormServer(formData);
         if (!erreur) {
@@ -26,6 +30,7 @@ const formContact = async (previousFormState, formData) => {
     return newFormState;
 }
 
+// Composant principal représentant le formulaire de contact
 export default function Contact() {
     const [formState, formAction] = useActionState(formContact, {
         nom: { erreur: null, valeur: '' },
@@ -40,7 +45,7 @@ export default function Contact() {
             </div>
             <form action={formAction} className={styles.form} noValidate>
                 <div className={styles.champ}>
-                    <label for="nom">Nom *</label>
+                    <label htmlFor="nom">Nom *</label>
                     <input
                         type="text"
                         name="nom"
@@ -53,7 +58,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className={styles.champ}>
-                    <label for="email" >Email *</label>
+                    <label htmlFor="email">Email *</label>
                     <input
                         type="email"
                         name="courriel"
@@ -66,7 +71,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className={styles.champ}>
-                    <label for="message">Rédigez votre message *</label>
+                    <label htmlFor="message">Rédigez votre message *</label>
                     <textarea
                         name="message"
                         id='message'
