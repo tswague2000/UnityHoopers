@@ -15,7 +15,7 @@ import DreamTeam from '@/public/logoequipe/dreamTeam.png';
  * @type {import('next').Metadata}
  */
 export const metadata = {
-    title: "Evénements", // Titre affiché dans l'onglet du navigateur
+    title: "Unity Hoopers vs Dream Team", // Titre affiché dans l'onglet du navigateur
     description: "Ne manquez pas l’affrontement tant attendu entre UnityHoopers et Dream Team ! Rendez-vous à domicile pour soutenir votre équipe locale et vivre un match intense rempli d’action et de passion. Achetez vos billets et rejoignez l’ambiance électrique du basketball ! " 
 };
 
