@@ -8,9 +8,9 @@ import believe from '@/public/logoequipe/believeThat.png';
 import dream from '@/public/logoequipe/dreamTeam.png';
 import swish from '@/public/logoequipe/swish.png';
 import thedons from '@/public/logoequipe/thedons.png';
-import thedirty from '@/public/logoequipe/Thedirty.png';
+import thedirty from '@/public/logoequipe/TheDirty.png';
 import UnityHoopers from '@/public/logoequipe/UnityHoopers.png';
-import weShoot3s from '@/public/logoequipe/weShoot3s.png';
+import weShoot3s from '@/public/logoequipe/WeShoot3s.png';
 
 /***
  * @type {import('next').Metadata}
