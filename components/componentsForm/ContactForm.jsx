@@ -8,6 +8,9 @@ import { validateFormContact } from '@/validations/contactForm';
 import { contactFormServer } from '@/actions/contactForm';
 
 // Fonction asynchrone pour gérer l'envoi du formulaire de contact
+    /**
+     * @param {FormData} formData 
+     */
 const formContact = async (previousFormState, formData) => {
     // Validation des données du formulaire
     let [erreur, newFormState] = validateFormContact(formData);
